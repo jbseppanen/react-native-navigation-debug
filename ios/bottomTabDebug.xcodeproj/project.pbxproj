@@ -194,7 +194,6 @@
 				11980D7D81A972886EA8C5F6 /* Pods-bottomTabDebug-tvOSTests.debug.xcconfig */,
 				05FA516C7D8CB55A04726DB5 /* Pods-bottomTabDebug-tvOSTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -209,7 +208,6 @@
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				999EA3A7403B15A049E2AC8C /* [CP] Embed Pods Frameworks */,
 				4351B62A42E84D06EC128F12 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
@@ -232,7 +230,6 @@
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				46A38BBA507E88935C204FE3 /* [CP] Embed Pods Frameworks */,
 				0563D15AD20C2693A06AABE4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
@@ -451,24 +448,6 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-bottomTabDebug-bottomTabDebugTests/Pods-bottomTabDebug-bottomTabDebugTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		46A38BBA507E88935C204FE3 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-bottomTabDebug/Pods-bottomTabDebug-frameworks.sh",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/OpenSSL/OpenSSL.framework/OpenSSL",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OpenSSL.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-bottomTabDebug/Pods-bottomTabDebug-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		72C14A8677A968E07163147F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -489,24 +468,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		999EA3A7403B15A049E2AC8C /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-bottomTabDebug-bottomTabDebugTests/Pods-bottomTabDebug-bottomTabDebugTests-frameworks.sh",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/OpenSSL/OpenSSL.framework/OpenSSL",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OpenSSL.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-bottomTabDebug-bottomTabDebugTests/Pods-bottomTabDebug-bottomTabDebugTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A4CBC7258F9F8C8DE774672B /* [CP] Check Pods Manifest.lock */ = {

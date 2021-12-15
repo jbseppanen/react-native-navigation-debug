@@ -4,17 +4,17 @@ import {Navigation} from 'react-native-navigation';
 
 function NewScreen(props) {
   // workaround to navigate to root with
-  React.useEffect(() => {
-    const listener = async (event) => {
-      await Navigation.popToRoot('THE_HOME');
-    };
-    const unsubscribe = Navigation.events().registerBottomTabSelectedListener(
-      listener,
-    );
-    return () => {
-      unsubscribe.remove();
-    };
-  }, []);
+  // React.useEffect(() => {
+  //   const listener = async (event) => {
+  //     await Navigation.popToRoot('THE_HOME');
+  //   };
+  //   const unsubscribe = Navigation.events().registerBottomTabSelectedListener(
+  //     listener,
+  //   );
+  //   return () => {
+  //     unsubscribe.remove();
+  //   };
+  // }, []);
 
   return (
     <View>
